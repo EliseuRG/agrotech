@@ -10,5 +10,15 @@ class Post extends Model
     use HasFactory;
 
     //protected  $table = 'posts';
-    protected  $table = 'users';
+    protected  $table = 'funcionarios';
+    protected $primaryKey = 'cod_func';
+    public $incrementing = false;
+
+    protected $fillable = [
+        'cod_func',
+        'nome_func',
+        'idade_func',
+        'telefone_func',
+        'end_func'
+    ];
 }
